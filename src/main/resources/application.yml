@@ -1,0 +1,23 @@
+server:
+  port: 8080
+  servlet:
+    context-path: /drools-demo
+
+spring:
+  main:
+    allow-bean-definition-overriding: true
+  #解决tomcat同时部署两个SpringBoot应用提示InstanceAlreadyExistsException
+  jmx:
+    default-domain: drools-demo
+  # 环境 dev|test|prod
+  profiles:
+    active: dev
+  # jackson时间格式化
+  jackson:
+    time-zone: GMT+8
+    date-format: yyyy-MM-dd HH:mm:ss
+  servlet:
+    multipart:
+      max-file-size: 100MB
+      max-request-size: 100MB
+      enabled: true
