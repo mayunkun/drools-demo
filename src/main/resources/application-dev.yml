@@ -1,25 +1,25 @@
-spring:
-  datasource:
-    driver-class-name: com.mysql.jdbc.Driver
-    url: jdbc:mysql://121.41.19.236:3306/drools-demo?allowMultiQueries=true&useUnicode=true&characterEncoding=UTF-8&useSSL=false
-    username: root
-    password: yunkun920801
-    type: com.zaxxer.hikari.HikariDataSource
-    hikari:
-      minimum-idle: 5
-      maximum-pool-size: 15
-      auto-commit: true
-      idle-timeout: 30000
-      pool-name: DatebookHikariCP
-      max-lifetime: 1800000
-      connection-timeout: 30000
-      connection-test-query: SELECT 1
+#spring:
+#  datasource:
+#    driver-class-name: com.mysql.jdbc.Driver
+#    url: jdbc:mysql://你的IP:3306/drools-demo?allowMultiQueries=true&useUnicode=true&characterEncoding=UTF-8&useSSL=false
+#    username: 账号
+#    password: 密码
+#    type: com.zaxxer.hikari.HikariDataSource
+#    hikari:
+#      minimum-idle: 5
+#      maximum-pool-size: 15
+#      auto-commit: true
+#      idle-timeout: 30000
+#      pool-name: DatebookHikariCP
+#      max-lifetime: 1800000
+#      connection-timeout: 30000
+#      connection-test-query: SELECT 1
 
 # appolo
 app:
   id: drools-demo
 apollo:
-  meta: http://121.41.19.236:8081
+  meta: http://你的IP:8081
   bootstrap:
     enabled: true
     eagerLoad:

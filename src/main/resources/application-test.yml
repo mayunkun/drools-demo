@@ -2,7 +2,7 @@
 #app:
 #  id: drools-demo
 #apollo:
-#  meta: http://121.41.19.236:8080
+#  meta: http://你的IP:8080
 #  bootstrap:
 #    enabled: true
 #    eagerLoad:
