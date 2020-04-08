@@ -25,6 +25,7 @@
         <commons.text.version>1.8</commons.text.version>
         <vavr.version>0.10.2</vavr.version>
         <swagger2.version>2.9.2</swagger2.version>
+        <fastjson.version>1.2.68</fastjson.version>
     </properties>
 
     <dependencies>
@@ -78,6 +79,12 @@
             <groupId>io.vavr</groupId>
             <artifactId>vavr</artifactId>
             <version>${vavr.version}</version>
+        </dependency>
+
+        <dependency>
+            <groupId>com.alibaba</groupId>
+            <artifactId>fastjson</artifactId>
+            <version>${fastjson.version}</version>
         </dependency>
 
         <dependency>
