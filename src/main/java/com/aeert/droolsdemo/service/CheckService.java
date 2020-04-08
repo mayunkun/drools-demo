@@ -9,4 +9,9 @@ public interface CheckService {
      **/
     public boolean isFugitive(Person person);
 
+    /**
+     * 报警
+     **/
+    public void callPolice(Person person);
+
 }

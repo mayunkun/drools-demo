@@ -10,6 +10,7 @@ rule "fugitive"
         $person : Person(checkService.isFugitive($person))
     then
         System.out.println("这个人是逃犯，先稳住，再报警！");
+        checkService.callPolice($person);
 end
 
 rule "age"

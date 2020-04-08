@@ -14,4 +14,9 @@ public class CheckServiceImpl implements CheckService {
         return "刀疤哥".equals(person.getName());
     }
 
+    @Override
+    public void callPolice(Person person) {
+        log.info(person.getName()+"正在XXX网吧上网，立即抓捕！");
+    }
+
 }
